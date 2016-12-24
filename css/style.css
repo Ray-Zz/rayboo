@@ -119,8 +119,12 @@ ul li a {
 
 .footer{
 	text-align: center;
+	font-size:22px;
 	width: 100%;
 	margin:0 auto;
+	border: 1px solid #eee;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
 }
 .footer ul li{
 	list-style-type: none;
