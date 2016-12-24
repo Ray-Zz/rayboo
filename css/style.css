@@ -1,0 +1,246 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+body {
+    color: rgba(0, 0, 0, .6);
+    font-size: 16px;
+	overflow: hidden;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+a {
+    color: rgba(0, 130, 135, .6);
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+a:visited {
+    color: rgba(0, 130, 135, .6);
+}
+
+a:hover {
+    color: rgba(37, 187, 196, .5);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    padding: 8px 6px;
+	margin:0 auto;
+}
+
+ul li a {
+    padding: 8px 6px;
+	text-align: center;
+}
+
+ #canvas{
+                width:100%;
+                height:100%;
+                overflow: hidden;
+                position:absolute;
+                top:0;
+                left:0;
+                background-color: #1a1724;             
+            }
+            .canvas-wrap{
+				display: table;
+    width: 100%;
+    height: 100%;
+                position:relative;
+                
+            }
+            div.canvas-content{
+                position:relative;
+                z-index:2000;
+                color:#fff;
+                text-align:center;
+                padding-top:30px;
+				display: table-cell;
+    vertical-align: middle;
+            }
+
+.wrap {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20%;
+    max-width: 720px;
+}
+
+.header {
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 42px;
+    margin-bottom: 30px;
+	margin-top: 50px;
+}
+
+.site-author-image {
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #eee;
+	border-radius:120px;
+	-webkit-border-radius: 120px;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+	-webkit-transition: -webkit-transform 0.6s ease-out;
+	-moz-transition: -moz-transform 0.6s ease-out;
+	-o-transition: -o-transform 0.6s ease-out;
+	-ms-transition: -ms-transform 0.6s ease-out;
+}
+
+.site-author-image:hover {
+            -webkit-transform: rotateZ(360deg);
+            -moz-transform: rotateZ(360deg);
+            -o-transform: rotateZ(360deg);
+            -ms-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+        }
+
+.body{
+	text-align: center;
+	color: white;
+}
+
+.footer{
+	text-align: center;
+	width: 100%;
+	margin:0 auto;
+}
+.footer ul li{
+	list-style-type: none;
+	display: inline;
+}
+.footer li:hover {
+    background-color: rgba(20, 145, 152, .4);
+    color: white;
+}
+
+.footer li:hover a {
+    color: white;
+}
+
+.github-c a{
+    color:#60a3ec;
+}
+.weibo-c a{
+    color:#fef20d;
+}
+.blog-c a{
+    color:#34d7c3 ;
+}
+.about-c a{
+	color:#00ce0d;
+}
+.music-c a{
+	color:#e77064;
+}
+
+.footer li.github-c:hover{
+    background-color:#60a3ec;
+}
+.footer li.weibo-c:hover{
+    background-color:#fef20d;
+}
+.footer li.blog-c:hover{
+    background-color:#34d7c3;
+}
+.footer li.about-c:hover{
+    background-color:#00ce0d;
+}
+.footer li.music-c:hover{
+    background-color:#e77064;
+}
+
+/* For Mobile and small screen*/
+@media screen and (max-width:980px) {
+	body,html {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+	body {
+		color: rgba(0, 0, 0, .6);
+		font-size: 16px;
+		overflow: hidden;
+		font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+	}
+	.header{
+		margin: 30px auto;
+	}
+    .body {
+        width: 100%;
+        font-size: 20px;
+		text-align: center;
+		margin:0 auto;
+	}
+	
+    .footer {
+        width: 100%;
+		text-align: center;
+		margin:0 auto;
+    }
+
+    .footer ul {
+        padding: 0;
+    }
+
+	.footer ul li{
+		list-style-type: inline;
+		display: block;
+	}
+	
+    .footer li {
+        margin: 20px auto 0 auto;
+        width: 100px;
+        /**background-color: rgba(245, 245, 245, 0.2);*/
+        text-align: center;
+    }
+	
+	.github-c{
+		background-color:#60a3ec;
+	}
+	.weibo-c{
+		background-color:#fef20d;
+	}
+	.blog-c{
+		background-color:#34d7c3 ;
+	}
+	.about-c{
+		background-color:#00ce0d;
+	}
+	.music-c{
+		background-color:#e77064;
+	}
+	
+    .footer li a {
+        color: white;
+        font-size: 20px;
+    }
+
+    .footer li:hover {
+        background-color: rgba(37, 187, 196, 0.6);
+    }
+
+    .footer li a:hover {
+        color: white;
+    }
+	
+}
