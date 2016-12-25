@@ -80,6 +80,7 @@ ul li a {
 }
 
 .header {
+	 z-index:2001;
 	 position:relative;
     padding-bottom: 10px;
     font-weight: normal;
@@ -115,12 +116,14 @@ ul li a {
 
 .body{
 	 position:relative;
+	 z-index:2001;
 	text-align: center;
 	color: white;
 }
 
 .footer{
 	 position:relative;
+	 z-index:2001;
 	text-align: center;
 	font-size:18px;
 	width: 100%;
