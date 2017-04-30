@@ -68,7 +68,10 @@ li a:hover, .dropdown:hover .dropbtn{
     display: block;
 }
 </style>
-	</head>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			
+		</script>
 
 	<body>
 		<head>
@@ -85,5 +88,14 @@ li a:hover, .dropdown:hover .dropbtn{
 		</head>
 	
 <iframe id="music" name="music" src="https://douban.fm/" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="yes" style="width: 100%;height: 100%;border: none;"></iframe>
-	</body>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$('a').click(function() {
+        	$(this).attr('class', 'active').siblings().removeAttr('class');
+        	$('#music').attr('src', $(this).attr('data'));
+        	$('title').html($(this).html() + " | I'm Ray.");
+        	$('link[rel="shortcut icon"]').attr('href', $(this).attr('data') + 'favicon.ico');
+      });
+		</script>
+		</body>
 </html>
