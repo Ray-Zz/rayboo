@@ -20,30 +20,29 @@
 			<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
 		<![endif]-->
 	<style>
-*{margin:0;padding:0;}
-		html, body {height: 100%;overflow: hidden;}
-			body {font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,PingFang SC,Source Han Sans CN,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;font: 13px/27px Arial,sans-serif;padding: 0;margin: 0;}
+	*{margin:0;padding:0;}
+	html, body {height: 100%;overflow: hidden;}
+	body {font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,PingFang SC,Source Han Sans CN,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;font: 13px/27px Arial,sans-serif;padding: 0;margin: 0;}
 
-ul{
-    list-style-type:none;
+	ul{
+	    list-style-type:none;
+	    background-color: #ccc;
+	    overflow:hidden;
+	}
+	li{
+	    float:left;
+	}
+	li a{
+	    display:inline-block;
+	    color:white;
+	    text-align:center;
+	    padding:14px 16px;
+	    text-decoration:none;
+	}
 
-	background-color: #fcfcfc;
-    overflow:hidden;
-}
-li{
-    float:left;
-}
-li a{
-    display:inline-block;
-    color:white;
-    text-align:center;
-    padding:14px 16px;
-    text-decoration:none;
-}
-
-li a:hover{
-    background-color:#8f8e94;
-}
+	li a:hover{
+	    background-color:#8f8e94;
+	}
 </style>
 
 	<body>
@@ -70,6 +69,12 @@ li a:hover{
 		<iframe id="music" name="music" src="https://douban.fm/" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="no" style="width: 100%;height: 100%;border: none;"></iframe>
 	
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<!-- Helpers -->
+		<script src="js/projector.js"></script>
+		<script src="js/canvas-renderer.js"></script>
+		<!-- Visualitzation adjustments -->
+		<script src="js/3d-lines-animation.js"></script>
+		<script src="js/color.js"></script>
 		<script src="js/color.js"></script>
 		<script type="text/javascript">
 			$('a').click(function() {
