@@ -68,15 +68,11 @@ li a:hover, .dropdown:hover .dropbtn{
     display: block;
 }
 </style>
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-		<script type="text/javascript">
-			
-		</script>
 
 	<body>
 		<head>
 			<ul>
-		    <li><a class="active" data="https://douban.fm/" href="javascript:;">豆瓣FM</a></li>
+		    		<li><a class="active" data="https://douban.fm/" href="javascript:;">豆瓣FM</a></li>
 				<li><a class="active" data="https://fm.qq.com/" href="javascript:;">企鹅FM</a></li>
 				<li><a class="active" data="http://fm.baidu.com/" href="javascript:;">百度FM</a></li>
 				<li><a class="active" data="https://www.lizhi.fm/" href="javascript:;">荔枝FM</a></li>
@@ -87,15 +83,17 @@ li a:hover, .dropdown:hover .dropbtn{
 			</ul>
 		</head>
 	
-<iframe id="music" name="music" src="https://douban.fm/" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="yes" style="width: 100%;height: 100%;border: none;"></iframe>
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<iframe id="music" name="music" src="https://douban.fm/" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="yes" style="width: 100%;height: 100%;border: none;"></iframe>
+	
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 		<script type="text/javascript">
 			$('a').click(function() {
-        	$(this).attr('class', 'active').siblings().removeAttr('class');
-        	$('#music').attr('src', $(this).attr('data'));
-        	$('title').html($(this).html() + " | I'm Ray.");
-        	$('link[rel="shortcut icon"]').attr('href', $(this).attr('data') + 'favicon.ico');
-      });
+				$(this).attr('class', 'active').siblings().removeAttr('class');
+				console.log($(this).attr('data'));
+				$('#music').attr('src', $(this).attr('data'));
+				$('title').html($(this).html() + " | I'm Ray.");
+				$('link[rel="shortcut icon"]').attr('href', $(this).attr('data') + 'favicon.ico');
+		      	});
 		</script>
 		</body>
 </html>
