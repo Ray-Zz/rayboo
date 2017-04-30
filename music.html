@@ -19,9 +19,71 @@
 		<!--[if IE]>
 			<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
 		<![endif]-->
+	<style>
+*{margin:0;padding:0;}
+ul{
+    list-style-type:none;
+    background-color:#ccc;
+    overflow:hidden;
+}
+li{
+    float:left;
+}
+li a, .dropbtn{
+    display:inline-block;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    background-color:#111;
+}
+
+.dropdown{
+    display:inline-block;
+}
+
+.dropdown-content{
+    min-width:200px;
+    background-color:#F9F9F9;
+    position:absolute;
+    display:none;
+    box-shadow:0px 8px 15px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+    color:black;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+}
+
+.dropdown-content a:hover{
+    background-color:#F1F1F1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+</style>
 	</head>
 
-	<body>		
+	<body>
+		<head>
+			<ul>
+		    <li><a class="active" data="https://douban.fm/" href="javascript:;">豆瓣FM</a></li>
+				<li><a class="active" data="https://fm.qq.com/" href="javascript:;">企鹅FM</a></li>
+				<li><a class="active" data="http://fm.baidu.com/" href="javascript:;">百度FM</a></li>
+				<li><a class="active" data="https://www.lizhi.fm/" href="javascript:;">荔枝FM</a></li>
+				<li><a class="active" data="http://www.lavaradio.com/" href="javascript:;">Lava Radio</a></li>
+				<li><a class="active" data="http://www.luoo.net/" href="javascript:;">落网</a></li>
+				<li><a class="active" data="http://www.fifm.live/index.htm" href="javascript:;">FIFM</a></li>
+				<li><a class="active" data="http://www.tingban.cn/" href="javascript:;">听伴</a></li>
+			</ul>
+		</head>
+	
 <iframe id="music" name="music" src="https://douban.fm/" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="yes" style="width: 100%;height: 100%;border: none;"></iframe>
 	</body>
 </html>
