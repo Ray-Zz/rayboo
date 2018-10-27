@@ -264,3 +264,9 @@ div.canvas-content {
 		color: white;
 	}
 }
+
+.copyright {
+    position: relative;
+    bottom: -100px;
+	z-index:2001;
+}
