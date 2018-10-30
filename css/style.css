@@ -159,7 +159,6 @@ div.canvas-content {
 }
 
 .about-c a {
-/* 	color: #00ce0d; */
 	color: #000000; 
 }
 
@@ -180,7 +179,6 @@ div.canvas-content {
 }
 
 .footer li.about-c:hover {
-/* 	background-color: #00ce0d; */
 	background-color: #000000;
 }
 
@@ -247,7 +245,6 @@ div.canvas-content {
 		background-color: #34d7c3;
 	}
 	.about-c {
-/* 		background-color: #00ce0d; */
 		background-color: #000000
 	}
 	.music-c {
