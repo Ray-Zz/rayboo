@@ -55,7 +55,7 @@ ul li a {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #fff;
+/* 	background-color: #fff; */
 }
 
 .canvas-wrap {
@@ -121,6 +121,8 @@ div.canvas-content {
 	color: white;
 	margin:0 auto 40px auto;
 	font-size:26px;
+	min-height:180px;
+	height: auto;
 }
 
 .footer {
@@ -128,6 +130,7 @@ div.canvas-content {
 	text-align: center;
 	font-size: 18px;
 	width: 100%;
+	min-height: 60px;
 	height: auto;
 	margin: 0 auto;
 }
